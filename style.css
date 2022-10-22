@@ -1,0 +1,389 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --main-color:black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+li{
+    list-style-type: none;
+}
+header{
+    background-image: url(img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.layer-header {
+background-color: rgba(0, 0, 0, 0.6);
+}
+.header-caption h1{
+    font-size: 3.2rem ;
+    font-weight: 800;
+}
+.header-caption h2{
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+.home{
+    position: relative;
+}
+.home::after{
+    content: "";
+height: 2px;
+width: 48px;
+background-color: white;
+position: absolute;
+top: 100%;
+left: 0%;
+right: 0%;
+
+}
+
+.nav-link {
+    font-size: 14px;
+}
+nav li {
+    padding-right: 20px;
+}
+
+.header-caption h2::after{
+    content:"|";
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-name:animi;
+    }
+    @keyframes animi {
+        0%{content: "|";}
+        0%{content: "L|";}
+        1%{content: "La|";}
+        2%{content: "Lar|";}
+        3%{content: "Larr|";}
+        4%{content: "Larry|";}
+        5%{content: "Larry D|";}
+        6%{content: "Larry Da|";}
+        7%{content: "Larry Dan|";}
+        8%{content: "Larry Dani|";}
+        9%{content: "Larry Danie|";}
+        10%{content: "Larry Daniel|";}
+        20%{content: "Larry Daniels|";}
+        21%{content: "Larry Daniel|";}
+        22%{content: "Larry Danie|";}
+        23%{content: "Larry Dani|";}
+        24%{content: "Larry Dan|";}
+        25%{content: "Larry D|";}
+ 
+        26%{content: "Larry |";}
+        27%{content: "Larr|";}
+        28%{content: "Lar|";}
+        29%{content: "La|";}
+        30%{content: "L|";}
+        31%{content: "|";}
+        32%{content: "D|";}
+        33%{content: "De|";}
+        34%{content: "Dev|";}
+        35%{content: "Deve|";}
+        36%{content: "Devel|";}
+        37%{content: "Develo|";}
+        38%{content: "Develop|";}
+        39%{content: "Develope|";}
+        49%{content: "Developer|";}
+        50%{content: "Develope|";}
+        51%{content: "Develop|";}
+        52%{content: "Develo|";}
+        53%{content: "Devel|";}
+        54%{content: "Deve|";}
+        55%{content: "Dev|";}
+        56%{content: "De|";}
+        57%{content: "D|";}
+        58%{content: "|";}
+        59%{content: "D|";}
+        60%{content: "De|";}
+        61%{content: "Des|";}
+        62%{content: "Desi|";}
+        63%{content: "Desig|";}
+        64%{content: "Design|";}
+        65%{content: "Designe|";}
+        80%{content: "Designer|";}
+        81%{content: "Designe|";}
+        82%{content: "Design|";}
+        83%{content: "Desig|";}
+        84%{content: "Desi|";}
+        85%{content: "Des|";}
+        86%{content: "De|";}
+        87%{content: "D|";}
+        88%{content: "|";}
+       
+    }
+     /* SRART SECTION HEADER  */
+
+ .hero-img img {
+    width: 100%;
+    position: relative;
+   
+ }
+
+ .hero-img {
+    position: relative;
+    width: 85%;
+ }
+ .hero-img::after{
+    content: "";
+    width: 85%;
+    height: 85%;
+    position: absolute;
+    left: -6%;
+    bottom: -30px;
+    background-image: url(img/dots.png);
+    background-repeat: repeat;
+    z-index:-1;
+ }
+.hero-img img{
+   width: 100%;
+}
+.progress-bar1::after{
+    content:"95%";
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    right: 10px;
+    font-size: 15px;
+    color: #fff;
+    
+}
+.progress-bar2::after{
+    content:"80%";
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    right: 10px;
+    font-size: 15px;
+    color: #fff;
+    
+}
+.progress-bar3::after{
+    content:"90%";
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    right: 10px;
+    font-size: 15px;
+    color: #fff;  
+}
+.btt1 , .btt2{
+    transition: all 0.4s;
+}
+.btt .btt1:hover {
+background-color: white !important;
+color: black !important;
+}
+.btt .btt2:hover {
+background-color: black !important;
+color: white;
+}
+
+/* start-section-services  */
+.services h2{
+    position: relative;
+    z-index: 4;
+ 
+}
+.services h2::after {
+    content: "";
+    width: 100%;
+    height: 40px;
+    background-image: url(img/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+ z-index: -1;
+}
+
+.icon{
+    font-size: 1.5rem;
+    width: 60px;
+    height: 60px;
+   background-color: whitesmoke;
+transition: all .5s;
+}
+
+
+.icon:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+.counter{
+    background-image: url(img/counters-bg.jpg);
+    background-position: center center;
+padding-left: 0 !important;
+padding-right: 0 !important;
+}
+
+.icon-counter {
+    font-size: 2rem;
+  color: black;
+ 
+}
+
+/* start-section-portfolio */
+
+
+.portfolio h2{
+    position: relative;
+    z-index: 4;
+ 
+}
+.portfolio h2::after {
+    content: "";
+    width: 100%;
+    height: 40px;
+    background-image: url(img/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+ z-index: -1;}
+
+ .layer-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .5s;
+ }
+ .layer-img:hover{
+opacity: .8;
+border: solid 6px rgb(165, 164, 164);
+ }
+ .icons-layer>div
+ {
+width: 30px;
+height: 30px;
+background-color:var(--main-color);
+color: white;
+border-radius: 50%;
+transition: all .5;
+ }
+ .icons-layer>div:hover{
+    background-color: white ;
+    color: var(--main-color);
+    border: .5px solid var(--main-color);
+ }
+ /* start-section-testimonials */
+
+ .Testimonials h2{
+    position: relative;
+    z-index: 4;
+ 
+}
+.Testimonials h2::after {
+    content: "";
+    width: 100%;
+    height: 40px;
+    background-image: url(img/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+ z-index: -1;}
+#carouselExampleIndicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(163, 161, 161);
+   margin-left: 10px;
+}
+/* start-section-our-blog */
+.our-blog h2{
+    position: relative;
+    z-index: 4;
+ 
+}
+.our-blog h2::after {
+    content: "";
+    width: 100%;
+    height: 40px;
+    background-image: url(img/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+ z-index: -1;}
+
+.our-blog-p1{
+    font-size: 14px;
+}
+.read-more-blog::after{
+    content: "";
+    width: 80px;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.our-blog-parts img {
+    transition: all 1s;
+}
+.our-blog-parts:hover img{
+    transform: scale(1.3);
+}
+#carouselExampleIndicators1 button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(163, 161, 161);
+   margin-left: 10px;
+}
+
+/* start-section-contact-us */
+
+.contact h2{
+    position: relative;
+    z-index: 4;
+ 
+}
+.contact h2::after {
+    content: "";
+    width: 100%;
+    height: 40px;
+    background-image: url(img/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+ z-index: -1;}
+
+ .icon-contact{
+    width: 60px;
+    height: 60px;
+   font-size: 1.4rem;
+   transition: all 1s;
+ }
+ .icon-contact:hover{
+    background-color: var(--main-color) !important;
+    color: white;
+ }
+ .submitt{
+    transition: all .5s;
+ }
+
+ .submitt:hover{
+background-color: white !important;
+color: var(--main-color) !important;
+ }
